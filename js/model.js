@@ -1,13 +1,21 @@
-/**
- * Created by IlyaLitvinov on 14.01.16.
- */
+
 var Model = (function (){
     function Model() {
         this.students = [{
-                name: true,
-                age: false,
-                evalution: false,
-            }
+                name: 'Tom',
+                age: 20,
+                evalution: 5,
+            },
+            {
+                name: 'Jim',
+                age: 19,
+                evalution: 4,
+            },
+            {
+                name: 'Jane',
+                age: 20,
+                evalution: 5,
+            },
         ]
     }
     
@@ -15,13 +23,6 @@ var Model = (function (){
         return this.students;
     };
 
-    Model.prototype.setStudent = function (title) {
-        for(var key in this.students) {
-            this.students[key] = number;
-        }
-
-        this.students[title] = string;
-    }
 
     return Model;
 })();
